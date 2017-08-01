@@ -1,3 +1,246 @@
-body{
-  color: red;
+header{
+  height: 700px;
+  width: auto;
+  background:
+     url(../img/coffee-shop.jpg)    /* image */
+     bottom left / cover /* position / size */
+     no-repeat;                /* repeat */
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: 700px;
+  background-color: rgba(0,50,100,.25);
+}
+
+.logo-tag{
+  color: #fff;
+  width: 50%;
+}
+
+h1, h4{
+  color: #fff;
+  font-family: 'IM Fell English', cursive;
+  font-size: 150px;
+  width: auto;
+  line-height: 115px;
+  position: absolute;
+  bottom: 100px;
+  right: 150px;
+  text-align: right;
+}
+
+h4{
+  font-family: 'Lato', sans-serif;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 25px;
+  text-align: center;
+  bottom: 20px;
+}
+
+.contact-us{
+  height: 50px;
+  background-color: rgba(0,0,0,.75);
+  width: 200px;
+  color: #fff;
+  font-family: 'Lato', serif;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  margin-top: 4%;
+  cursor: pointer;
+}
+
+/*
+
+    OUR past
+
+*/
+
+.our-past{
+  margin: 0px auto 0px auto;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.our-past article{
+  float: left;
+  width: 50%;
+  margin-top: 2%;
+}
+
+.our-past h2{
+  font-family: 'IM Fell English', serif;
+  font-size: 128px;
+  text-align: center;
+  margin: -25px 50px 0px auto;
+}
+
+.our-past .small-word{
+  font-family: 'IM Fell English', serif;
+  font-size: 64px;
+  text-align: center;
+  margin: -70px 0px 0px 1px;
+  display: block;
+}
+
+.our-past p{
+  font-family: 'Lato', serif;
+  color: #000;
+  font-size: 100%;
+  margin: 20px auto 0px auto;
+  text-align: left;
+  line-height: 20px;
+  width: 50%;
+}
+
+.our-past img{
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+/*
+
+    OUR PROCESS
+
+*/
+
+.our-process{
+  margin: 0px auto 0px auto;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.our-process article{
+  float: right;
+  width: 50%;
+  margin-top: 15px;
+}
+
+.our-process h2{
+  font-family: 'IM Fell English', serif;
+  font-size: 128px;
+  text-align: center;
+  margin: -25px 50px 0px auto;
+}
+
+.our-process .small-word{
+  font-family: 'IM Fell English', serif;
+  font-size: 64px;
+  text-align: center;
+  margin: -70px 0px 0px 88px;
+  display: block;
+}
+
+.our-process p{
+  font-family: 'Lato', serif;
+  color: #000;
+  font-size: 100%;
+  margin: 20px auto 0px auto;
+  text-align: left;
+  line-height: 20px;
+  width: 50%;
+}
+
+.our-process img{
+  width: 50%;
+  height: auto;
+  float: left;
+}
+
+/*
+
+    OUR FAMILY
+
+*/
+
+.our-family{
+  margin: 0px auto 0px auto;
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.our-family article{
+  float: left;
+  width: 50%;
+  margin-top: 25px;
+}
+
+.our-family h2{
+  font-family: 'IM Fell English', serif;
+  font-size: 128px;
+  text-align: center;
+  margin: -25px 50px 0px auto;
+}
+
+.our-family .small-word{
+  font-family: 'IM Fell English', serif;
+  font-size: 64px;
+  text-align: center;
+  margin: -70px 0px 0px 75px;
+  display: block;
+}
+
+.our-family p{
+  font-family: 'Lato', serif;
+  color: #000;
+  font-size: 100%;
+  margin: 20px auto 0px auto;
+  text-align: left;
+  line-height: 20px;
+  width: 50%;
+}
+
+.our-family img{
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+
+/*
+
+    FOOTER SECTION
+
+*/
+
+footer{
+  height: 75px;
+  background-color: #333;
+  padding-top: 25px;
+}
+
+.copyright{
+  width: 25%;
+  margin: 0px auto;
+}
+
+p{
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+.social-networks{
+  margin: 10px auto;
+  width: 10%;
+}
+
+.social-networks li{
+  display: inline;
+  text-align: center;
+  margin: 0px auto;
+  color: #fff;
+  font-size: 24px;
 }
