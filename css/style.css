@@ -1,5 +1,5 @@
 header{
-  height: 700px;
+  height: 100vh;
   width: auto;
   background:
      url(../img/coffee-shop.jpg)    /* image */
@@ -14,7 +14,7 @@ header{
   right: 0;
   bottom: 0;
   width: auto;
-  height: 700px;
+  height: 100vh;
   background-color: rgba(0,50,100,.25);
 }
 
