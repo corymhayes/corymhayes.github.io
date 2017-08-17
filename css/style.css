@@ -1,10 +1,7 @@
 header{
   height: 100vh;
   width: auto;
-  background:
-     url(../img/coffee-shop.jpg)
-     bottom left / cover
-     no-repeat;
+  background: url(../img/coffee-shop.jpg) bottom left / cover no-repeat;
 }
 
 .overlay{
