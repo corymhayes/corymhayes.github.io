@@ -2,9 +2,9 @@ header{
   height: 100vh;
   width: auto;
   background:
-     url(../img/coffee-shop.jpg)    /* image */
-     bottom left / cover /* position / size */
-     no-repeat;                /* repeat */
+     url(../img/coffee-shop.jpg)
+     bottom left / cover
+     no-repeat;
 }
 
 .overlay{
