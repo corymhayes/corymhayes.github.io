@@ -1,243 +1,115 @@
+header, #skills, #portfolio, #contact{
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
 header{
-  height: 100vh;
-  width: auto;
-  background: url(../img/coffee-shop.jpg) bottom left / cover no-repeat;
+  background: linear-gradient(-290deg, #F03C02, #6B0103);
 }
 
-.overlay{
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: auto;
-  height: 100vh;
-  background-color: rgba(0,50,100,.25);
-}
-
-.logo-tag{
+h1{
+  font-family: 'Roboto Slab', sans-serif;
+  font-size: 9rem;
   color: #fff;
-  width: 50%;
+  font-weight: 700;
+  letter-spacing: 5px;
+  line-height: 75px;
 }
 
-h1, h4{
+h2, h3, h5{
+  font-family: 'Roboto', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 1px;
   color: #fff;
-  font-family: 'IM Fell English', cursive;
-  font-size: 150px;
-  width: auto;
-  line-height: 115px;
-  position: absolute;
-  bottom: 100px;
-  right: 150px;
-  text-align: right;
+  font-weight: 300;
 }
 
-h4{
-  font-family: 'Lato', sans-serif;
-  font-size: 36px;
-  text-transform: uppercase;
-  letter-spacing: 25px;
+h2{
+  margin-bottom: 5%;
+  background-color: #000;
+  width: 69px;
+  font-weight: 100;
   text-align: center;
-  bottom: 20px;
 }
 
-.contact-us{
-  height: 50px;
-  background-color: rgba(0,0,0,.75);
-  width: 200px;
-  color: #fff;
-  font-family: 'Lato', serif;
-  border-radius: 5px;
-  border: none;
-  font-size: 16px;
-  margin-top: 4%;
-  cursor: pointer;
-}
-
-/*
-
-    OUR past
-
-*/
-
-.our-past{
-  margin: 0px auto 0px auto;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.our-past article{
-  float: left;
-  width: 50%;
-  margin-top: 2%;
-}
-
-.our-past h2{
-  font-family: 'IM Fell English', serif;
-  font-size: 128px;
-  text-align: center;
-  margin: -25px 50px 0px auto;
-}
-
-.our-past .small-word{
-  font-family: 'IM Fell English', serif;
-  font-size: 64px;
-  text-align: center;
-  margin: -70px 0px 0px 1px;
-  display: block;
-}
-
-.our-past p{
-  font-family: 'Lato', serif;
+h5{
+  font-size: 1.25em;
+  font-weight: 500;
   color: #000;
-  font-size: 100%;
-  margin: 20px auto 0px auto;
-  text-align: left;
-  line-height: 20px;
-  width: 50%;
-}
-
-.our-past img{
-  width: 50%;
-  height: auto;
-  float: right;
-}
-
-/*
-
-    OUR PROCESS
-
-*/
-
-.our-process{
-  margin: 0px auto 0px auto;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.our-process article{
-  float: right;
-  width: 50%;
-  margin-top: 15px;
-}
-
-.our-process h2{
-  font-family: 'IM Fell English', serif;
-  font-size: 128px;
-  text-align: center;
-  margin: -25px 50px 0px auto;
-}
-
-.our-process .small-word{
-  font-family: 'IM Fell English', serif;
-  font-size: 64px;
-  text-align: center;
-  margin: -70px 0px 0px 88px;
-  display: block;
-}
-
-.our-process p{
-  font-family: 'Lato', serif;
-  color: #000;
-  font-size: 100%;
-  margin: 20px auto 0px auto;
-  text-align: left;
-  line-height: 20px;
-  width: 50%;
-}
-
-.our-process img{
-  width: 50%;
-  height: auto;
-  float: left;
-}
-
-/*
-
-    OUR FAMILY
-
-*/
-
-.our-family{
-  margin: 0px auto 0px auto;
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.our-family article{
-  float: left;
-  width: 50%;
-  margin-top: 25px;
-}
-
-.our-family h2{
-  font-family: 'IM Fell English', serif;
-  font-size: 128px;
-  text-align: center;
-  margin: -25px 50px 0px auto;
-}
-
-.our-family .small-word{
-  font-family: 'IM Fell English', serif;
-  font-size: 64px;
-  text-align: center;
-  margin: -70px 0px 0px 75px;
-  display: block;
-}
-
-.our-family p{
-  font-family: 'Lato', serif;
-  color: #000;
-  font-size: 100%;
-  margin: 20px auto 0px auto;
-  text-align: left;
-  line-height: 20px;
-  width: 50%;
-}
-
-.our-family img{
-  width: 50%;
-  height: auto;
-  float: right;
-}
-
-
-/*
-
-    FOOTER SECTION
-
-*/
-
-footer{
-  height: 75px;
-  background-color: #333;
-  padding-top: 25px;
-}
-
-.copyright{
-  width: 25%;
-  margin: 0px auto;
+  margin-bottom: 5%;
 }
 
 p{
-  color: #fff;
-  font-family: 'Lato', sans-serif;
-  font-size: 14px;
-  text-align: center;
+  line-height: 25px;
 }
 
-.social-networks{
-  margin: 10px auto;
-  width: 10%;
+#skills h2{
+  width: 75px;
 }
 
-.social-networks li{
-  display: inline;
-  text-align: center;
-  margin: 0px auto;
-  color: #fff;
-  font-size: 24px;
+#portfolio h2{
+  width: 118px;
+}
+
+#contact h2{
+  width: 115px;
+}
+
+.contact-info{
+  text-align: right;
+}
+
+ul{
+  padding: 0px;
+  margin: -10px 0 0 0;
+}
+
+li{
+  list-style: none;
+  text-align: right;
+  line-height: 25px;
+}
+
+li:first-child{
+  font-size: 1.25em;
+  font-weight: 700;
+}
+
+a{
+  color: #000;
+}
+
+a:hover{
+  color: rgba(0,0,0,.75);
+}
+
+address{
+  margin: 0px;
+  padding: 0px;
+}
+
+.input-group{
+  margin-bottom: 2%;
+}
+
+.btn{
+  background-color: #000;
+  border: none;
+}
+
+.btn:hover{
+  background-color: rgba(0,0,0,.75);
+}
+
+
+@media (max-width: 991px){
+  #skills, #portfolio, #contact{
+    height: 100%;
+  }
+
+  li{
+    text-align: left;
+  }
 }
