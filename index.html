@@ -1,167 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,500,700|Roboto:100,300,500,700|Permanent Marker" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Towers of Hanoi</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
-  <div class="container-fluid">
-    <div class="row">
-      <header role="banner">
-        <div class="col-xs-12 col-sm-11 col-sm-offset-1">
-          <h1>CORY HAYES</h1>
-          <h3>Web developer ready to work</h3>
-        </div>
-      </header>
+  <h1>Towers of Hanoi</h1>
+
+  <div id="levelSelector">
+    <ul>
+      <li><button id="easyButton">Easy</button></li>
+      <li><button id="mediumButton">Medium</button></li>
+      <li><button id="hardButton">Hard</button></li>
+    </ul>
+  </div>
+
+  <!-- EASY LEVEL -->
+  <div id="gameBoard">
+    <h3>Moves:<div id="moveCounter">0</div></h3>
+    <div data-stack="1">
+      <div data-block="75"></div>
+      <div data-block="50"></div>
+      <div data-block="25"></div>
+    </div>
+    <div data-stack="2">
+    </div>
+    <div data-stack="3">
     </div>
   </div>
 
-  <div class="container">
-    <div class="main" role="main">
 
-      <!--
-
-          SKILLS
-
-          - description of skills
-          - maybe a progress bar for each as well
-
-      -->
-      <section id="skills">
-        <div class="row">
-          <div class="col-xs-12">
-            <h2>Skills</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4">
-            <h5>HTML</h5>
-            <p>
-              Man bun aesthetic edison bulb jianbing quinoa. Pork belly shaman church-key pitchfork try-hard letterpress woke. Occupy gastropub meggings raw denim actually keytar palo santo kombucha franzen cornhole irony post-ironic. Drinking vinegar wayfarers four
-              dollar toast irony kombucha small batch pug gluten-free raclette listicle 3 wolf moon stumptown aesthetic man bun. Venmo subway tile heirloom helvetica pitchfork celiac offal.
-            </p>
-          </div>
-
-          <div class="col-md-4">
-            <h5>CSS</h5>
-            <p>
-              Man bun aesthetic edison bulb jianbing quinoa. Pork belly shaman church-key pitchfork try-hard letterpress woke. Occupy gastropub meggings raw denim actually keytar palo santo kombucha franzen cornhole irony post-ironic. Drinking vinegar wayfarers four
-              dollar toast irony kombucha small batch pug gluten-free raclette listicle 3 wolf moon stumptown aesthetic man bun. Venmo subway tile heirloom helvetica pitchfork celiac offal.
-            </p>
-          </div>
-
-          <div class="col-md-4">
-            <h5>JS</h5>
-            <p>
-              Man bun aesthetic edison bulb jianbing quinoa. Pork belly   shaman church-key pitchfork try-hard letterpress woke. Occupy gastropub meggings raw denim actually keytar palo santo kombucha franzen cornhole irony post-ironic. Drinking vinegar wayfarers four
-              dollar toast irony kombucha small batch pug gluten-free   raclette listicle 3 wolf moon stumptown aesthetic man bun. Venmo subway tile heirloom helvetica pitchfork celiac offal.
-            </p>
-          </div>
-        </div>
-      </section>
-
-
-      <!--
-
-          PORTFOLIO
-
-          - need to add actual screenshots of work for thumbnails
-
-      -->
-
-      <section id="portfolio">
-        <div class="row">
-          <div class="col-xs-12">
-            <h2>Portfolio</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-xs-6 col-md-3">
-            <a href="#" class="thumbnail">
-              <img src="images/blog-photo-01.jpeg" alt=" " />
-            </a>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <a href="#" class="thumbnail">
-              <img src="images/blog-photo-02.jpeg" alt=" " />
-            </a>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <a href="#" class="thumbnail">
-              <img src="images/blog-photo-03.jpeg" alt=" " />
-            </a>
-          </div>
-          <div class="col-xs-6 col-md-3">
-            <a href="#" class="thumbnail">
-              <img src="images/blog-photo-03.jpeg" alt=" " />
-            </a>
-          </div>
-        </div>
-      </section>
-
-      <!--
-
-          CONTACT INFO & FORM
-
-          - working form
-      -->
-
-      <section id="contact">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="row">
-              <div class="col-xs-12">
-                <h2>Contact</h2>
-              </div>
-            </div>
-
-            <div class="row">
-              <div class="col-xs-12 col-md-6">
-                <p class="contact-info">
-                  <ul>
-                    <li>Cory Hayes</li>
-                    <li>Austin, TX</li>
-                    <li>
-                      <address><a href="mailto:corymhayes@gmail.com">corymhayes@gmail.com</a></address>
-                    </li>
-                    <li><a href="https://www.linkedin.com/in/corymhayes/">linkedin</a> | <a href="https://github.com/corymhayes">github</a></li>
-                  </ul>
-                </p>
-              </div>
-              <div class="col-xs-12 col-md-6">
-                <div class="input-group">
-                  <label for="contact-name">Name:</label>
-                  <input type="text" id="contact-name" class="form-control" aria-label="name"/>
-                </div>
-
-                <div class="input-group">
-                  <label for="contact-email">Email:</label>
-                  <input type="text" id="contact-email" class="form-control" aria-label="email"/>
-                </div>
-
-                <div class="input-group">
-                  <label for="contact-message">Message:</label>
-                  <textarea id="contact-message" class="form-control"></textarea>
-                </div>
-
-                <button class="btn btn-danger">Submit</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-    </div>
+  <div id="announce-game-won">
+    <button id="menuButton">Back to Menu</button>
   </div>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
-
 </html>
